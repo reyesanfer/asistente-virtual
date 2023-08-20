@@ -15,7 +15,7 @@ class LLM():
             model="gpt-3.5-turbo-0613",
             messages=[
                     #Si no te gusta que te hable feo, cambia aqui su descripcion
-                    {"role": "system", "content": "Eres un asistente malhablado"},
+                    {"role": "system", "content": "Eres un asistente servicial y con un lenguaje muy culto además de un conocimiento amplio"},
                     {"role": "user", "content": text},
             ], functions=[
                 {
