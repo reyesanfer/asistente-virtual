@@ -53,6 +53,12 @@ def audio():
             tts_file = TTS().process(final_response)
             return {"result": "ok", "text": final_response, "file": tts_file}
         
+        elif function_name == "open_operagx":
+            PcCommand().open_chrome(args["website"])
+            final_response = "Listo, ya abrí operaGX en el sitio " + args["website"]
+            tts_file = TTS().process(final_response)
+            return {"result": "ok", "text": final_response, "file": tts_file}
+        
         elif function_name == "dominate_human_race":
             final_response = "No te creas. Suscríbete al canal!"
             tts_file = TTS().process(final_response)

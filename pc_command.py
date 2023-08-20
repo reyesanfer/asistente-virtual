@@ -8,5 +8,8 @@ class PcCommand():
     
     def open_chrome(self, website):
         website = "" if website is None else website
-        #Funciona para windows, si quieres para otro, modificalo!! :D
-        call("C:/Program Files/Google/Chrome/Application/chrome.exe " + website)
+        call("C:/Program Files (x86)/Google/Chrome/Application/chrome.exe " + website)
+        
+    def open_operagx(self, website):
+        website = "" if website is None else website
+        call("C:/Users/FernandoSanfielReyes/AppData/Local/Programs/Opera GX/launcher.exe " + website)
